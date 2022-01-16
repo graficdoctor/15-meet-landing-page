@@ -37,11 +37,7 @@ body {
 }
 
 /* Make images easier to work with */
-img,
-picture,
-video,
-canvas,
-svg {
+.img {
   display: block;
   max-width: 100%;
 }
