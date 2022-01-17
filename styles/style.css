@@ -74,7 +74,8 @@ p.overline {
   height: 28px;
 }
 
-.container {
+.container,
+.image-container {
   width: 85%;
   margin: 0 auto;
 }
@@ -95,6 +96,7 @@ p.overline {
   padding: 1rem;
   width: 8.75em;
   height: 58px;
+  transition: background 0.5s linear;
 }
 
 a {
@@ -132,12 +134,11 @@ a {
   background: var(--clr-primary-200);
 }
 
-.users-display {
+.image-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5em;
-  margin-bottom: 4em;
-  margin-top: 6em;
+  margin: 4em auto 6em;
 }
 
 .user-image {
@@ -199,7 +200,7 @@ a {
 }
 
 .btn-download-footer:hover,
-.btn-download-footer:active {
+.btn-download-footer:focus {
   background: var(--clr-secondary-200);
 }
 
@@ -215,10 +216,6 @@ a {
     margin-bottom: 0;
   }
 
-  section:first-of-type {
-    max-width: 30em;
-  }
-
   a {
     display: inline-block;
   }
@@ -227,7 +224,12 @@ a {
     margin-left: 1em;
   }
 
-  .users-display {
+  .container {
+    width: 33rem;
+    margin: 0 auto;
+  }
+
+  .image-container {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -283,10 +285,6 @@ a {
     grid-area: right;
   }
 
-  .container {
-    width: 69em;
-  }
-
   .split {
     display: flex;
     flex-direction: row;
@@ -294,6 +292,10 @@ a {
     align-items: center;
     gap: 5em;
     text-align: left;
+  }
+
+  .image-container {
+    width: 68rem;
   }
 
   .promo-text {
