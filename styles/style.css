@@ -31,8 +31,7 @@ body {
   text-align: center;
 }
 
-main,
-footer .elements {
+.wrapper {
   max-width: 1440px;
   margin: 0 auto;
 }
